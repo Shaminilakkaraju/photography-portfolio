@@ -1,0 +1,112 @@
+.home {
+    text-align: center;
+    padding: 2rem;
+  }
+  
+  .home h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #333;
+  }
+  
+  .home p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    color: #666;
+  }
+  
+  .highlighted-work {
+    margin-top: 2rem;
+  }
+  
+  .highlighted-work h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #333;
+  }
+  
+  .photo-scroll-container {
+    overflow-x: auto;
+    white-space: nowrap;
+    scroll-behavior: smooth; 
+    scrollbar-width: none; 
+    -ms-overflow-style: none;
+  }
+  
+  .photo-scroll-container::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .photo-scroll {
+    display: flex;
+    transition: transform 0.5s ease; 
+  }
+  
+  .highlight-photo {
+    width: auto;
+    height: 400px;
+    margin-right: 20px;
+    border-radius: 8px;
+  }
+  
+  .highlight-photo:hover  {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  .call-to-action {
+    margin-top: 2rem;
+  }
+  
+  .call-to-action button {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .call-to-action button:hover {
+    background-color: #0056b3;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .home h1 {
+      font-size: 2rem;
+    }
+  
+    .home p {
+      font-size: 1rem;
+    }
+  
+    .highlighted-work h2 {
+      font-size: 1.5rem;
+    }
+  
+    .highlight-photo {
+      height: 300px;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .home h1 {
+      font-size: 1.5rem;
+    }
+  
+    .home p {
+      font-size: 0.8rem;
+    }
+  
+    .highlighted-work h2 {
+      font-size: 1.2rem;
+    }
+  
+    .highlight-photo {
+      height: 200px;
+      margin-right: 10px;
+    }
+  }
+  

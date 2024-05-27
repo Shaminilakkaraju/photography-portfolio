@@ -1,0 +1,60 @@
+.gallery-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .upload-input {
+    margin-bottom: 20px;
+  }
+  
+  .photo-grid {
+    column-count: 4;
+    column-gap: 1rem;
+  }
+  
+  .photo {
+    width: 100%;
+    margin-bottom: 1rem;
+    border-radius: 8px;
+    display: block;
+    transition: transform 0.2s ease;
+  }
+  
+  
+  .photo:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  .delete-button {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    padding: 5px 10px;
+    font-size: 14px;
+    background-color: #f44336;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .delete-button:hover {
+    background-color: #d32f2f;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .photo-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .photo-grid {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+  
