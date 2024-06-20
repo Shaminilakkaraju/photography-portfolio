@@ -16,7 +16,7 @@ const App = () => (
     <GlobalStyles />
     <Navbar />
     <Routes>
-      <Route exact path="/home" element={<Home />} />
+      <Route path="/" element={<Home />} />
       <Route path="/about" element={<About />} />
       <Route path="/gallery" element={<Gallery />} />
       <Route path="/testimonials" element={<Testimonials />} />
